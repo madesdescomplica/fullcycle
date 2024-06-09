@@ -1,0 +1,9 @@
+src/
+└── core/
+    └── category/
+        └── domain/
+            │   └── category.cpython-312.pyc*
+            └── category.py*
+
+4 directories, 2 files
+// tree src -F | grep -v "__pycache__" > structure.tree (Ubuntu)

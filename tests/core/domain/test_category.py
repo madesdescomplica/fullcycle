@@ -2,7 +2,7 @@ from faker import Faker
 import pytest
 from uuid import UUID, uuid4
 
-from category import Category
+from src.core.category.domain.category import Category
 
 
 class TestCategory:
@@ -103,7 +103,7 @@ class TestActivateCategory:
 
     name: str = faker.word()
     description: str = faker.sentence(nb_words=10)
-    
+
     def test_activate_inactive_category(self):
         category = Category(
             name=self.name,
